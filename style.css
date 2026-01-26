@@ -1,0 +1,188 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+}
+main {
+    padding: 2rem;
+}
+.profile-section {
+    background: #fff;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #35424a;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+/* File */
+input[type="file"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+#photo-preview {
+    margin-top: 1rem;
+    text-align: center;
+}
+#photo-preview img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
+#next-btn {
+    padding: 1rem 2rem;
+    background: #0170b9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+#next-btn:hover {
+    background: #015a93;
+}
+.company-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #0170b9;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+.company-link:hover {
+    background: #015a93;
+    text-decoration: underline;
+}
+.input-section, .results-section {
+    background: #fff;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background: #35424a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e8491d;
+}
+.job-list {
+    display: grid;
+    gap: 1rem;
+}
+.job-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.job-card h3 {
+    margin-top: 0;
+    color: #35424a;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #35424a;
+    color: #fff;
+}
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+.skill-tag {
+    background: #0170b9;
+    color: white;
+    padding: 0.4rem 0.6rem;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.9rem;
+}
+.skill-tag span {
+    cursor: pointer;
+    background: rgba(255,255,255,0.2);
+    padding: 0 6px;
+    border-radius: 50%;
+}
+.modal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.45);
+    z-index: 2000;
+}
+.modal-content {
+    background: #fff;
+    padding: 1.25rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 640px;
+}
+.modal-content h3 { margin-top: 0; }
+.modal-actions {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+.quiz-feedback { margin-top: 0.8rem; color: red; font-weight: 600; }
+.loading-spinner {
+    padding: 1rem 0;
+    font-weight: bold;
+}

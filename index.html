@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Work Wise - Job Recommendations</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Work Wise</h1>
+    <p>Find your perfect job match based on your skills</p>
+  </header>
+  <main>
+    <section class="profile-section">
+      <h2>Create Your Profile</h2>
+      <form id="profile-form">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" required placeholder="e.g., Aradhaya">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required placeholder="e.g., your.email@example.com">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" placeholder="e.g., 987XXXXX10">
+        </div>
+        <div class="form-group">
+          <label for="photo">Upload Your Photo:</label>
+          <input type="file" id="photo" accept="image/*" />
+          <div id="photo-preview"></div>
+        </div>
+        <button type="button" id="next-btn">Next →</button>
+      </form>
+    </section>
+    <!--skill-->
+    <section class="input-section" style="display: none;">
+      <h2>Hello, <span id="user-name"></span>!</h2>
+      <p>Now, add your skills to get personalized job recommendations.</p>
+      <div class="input-container">
+        <div id="skill-tags" class="skill-tags"></div>
+        <input type="text" id="skill-input" placeholder="e.g., HTML, CSS, Python, Data Structures..." />
+        <button type="button" id="add-skill-btn">Add Skill</button>
+      </div>
+      <button type="button" id="recommend-btn">Find Recommended Jobs</button>
+      <button type="button" id="logout-btn" style="background:#b02a37;margin-top:1rem;">Logout</button>
+    </section>
+    <!-- Results -->
+    <section class="results-section" id="results" style="display: none;">
+      <h2>Recommended Jobs For You</h2>
+      <div class="loading-spinner" id="spinner" style="display:none;">Analyzing...</div>
+      <div class="job-list" id="job-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built by Binary Brains ❤️</p>
+  </footer>
+  <!-- Skilldisplay -->
+  <div id="quiz-modal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <h3>Verify Skill: <span id="quiz-skill-name"></span></h3>
+      <div id="quiz-questions"></div>
+      <div class="modal-actions">
+        <button id="quiz-submit">Submit Answers</button>
+        <button id="quiz-cancel">Cancel</button>
+      </div>
+      <div id="quiz-feedback" class="quiz-feedback"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
