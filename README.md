@@ -19,6 +19,8 @@
 The **Job Recommendation System** is a web-based application designed to help users discover relevant job opportunities based on their skills, education, and preferences.  
 It leverages data-driven matching algorithms to provide personalized recommendations, making job searching faster and more efficient.
 
+LIVE DEMO : https://tanyacodes-gif.github.io/job-recommendation-system/
+
 **Key Objectives:**
 - Suggest jobs that best match the user’s profile.
 - Improve the job search experience for students and professionals.
