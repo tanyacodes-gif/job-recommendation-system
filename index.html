@@ -10,16 +10,16 @@
 <body>
   <header>
     <div class="hero-inner">
-      <span class="eyebrow">CAREER MATCHING, MADE SMARTER</span>
-      <h1>Work Wise <span class="brand-mark">✦</span></h1>
-      <p>Verify what you know. Discover where you fit.</p>
-      <div class="hero-pills"><span>✓ Skill quizzes</span><span>✦ 24+ role pathways</span><span>↗ Career links</span></div>
+      <span class="eyebrow">A STUDENT-BUILT PROJECT</span>
+      <h1>Work Wise</h1>
+      <p>Explore jobs that fit the skills you have, and find out what to learn next.</p>
+      <div class="hero-pills"><span>17 skills to explore</span><span>Short knowledge checks</span><span>Company career links</span></div>
     </div>
   </header>
   <main>
     <section class="profile-section panel">
-      <div class="section-kicker">STEP 01</div><h2>Create your profile</h2>
-      <p class="muted">Start with the basics. Your profile is saved in this browser.</p>
+      <div class="section-kicker">FIRST THINGS FIRST</div><h2>Set up your profile</h2>
+      <p class="muted">Add a few details so you can get started. Your information stays in this browser.</p>
       <form id="profile-form" onsubmit="return false;">
         <div class="form-grid">
           <div class="form-group"><label for="name">Full name *</label><input type="text" id="name" required placeholder="e.g., Alex Sharma" autocomplete="name"></div>
@@ -27,13 +27,13 @@
           <div class="form-group"><label for="phone">Phone number (optional)</label><input type="tel" id="phone" placeholder="Your contact number" autocomplete="tel"></div>
           <div class="form-group"><label for="photo">Profile photo (optional, max 2 MB)</label><input type="file" id="photo" accept="image/*"><div id="photo-preview"></div></div>
         </div>
-        <button type="button" id="next-btn" class="primary-btn">Build my skill profile <span>→</span></button>
+        <button type="button" id="next-btn" class="primary-btn">Continue to skills <span>→</span></button>
       </form>
     </section>
     <section class="input-section panel" style="display:none;">
-      <div class="section-kicker">STEP 02</div><h2>Welcome, <span id="user-name"></span>!</h2>
-      <p class="muted">Choose a skill below or type one. Answer all four multiple-choice questions; at least 3 correct answers verifies the skill.</p>
-      <div class="verification-note"><strong>How verification works</strong><span>4 questions per skill · 3/4 to pass · Retake by removing and adding the skill again</span></div>
+      <div class="section-kicker">YOUR SKILLS</div><h2>Welcome, <span id="user-name"></span>!</h2>
+      <p class="muted">Pick a skill you know and answer four quick questions. Get at least three right to mark it as verified in this demo.</p>
+      <div class="verification-note"><strong>A quick note</strong><span>This is a basic knowledge check, not a formal certificate. You can try a skill again after removing it.</span></div>
       <label for="skill-input">Add a skill</label>
       <div class="input-container"><input type="text" id="skill-input" placeholder="e.g., Python, SQL, React…"><button type="button" id="add-skill-btn" class="primary-btn">Verify skill</button></div>
       <h3 class="subheading">Skill library <span class="muted small">Select to take a quiz</span></h3>
@@ -43,17 +43,17 @@
       <div class="button-row"><button type="button" id="recommend-btn" class="primary-btn">Find my job matches <span>→</span></button><button type="button" id="logout-btn" class="secondary-btn">Clear profile</button></div>
     </section>
     <section class="results-section panel" id="results" style="display:none;">
-      <div class="section-kicker">STEP 03</div><h2>Recommended career paths</h2>
-      <p class="muted">Explore roles ranked by how many required skills you have verified. Company links lead to career websites, not guaranteed open vacancies.</p>
+      <div class="section-kicker">WHAT COULD FIT?</div><h2>Job ideas based on your skills</h2>
+      <p class="muted">These suggestions are based on the skills you verified. They are starting points for research, not a promise of a job opening.</p>
       <div class="loading-spinner" id="spinner" style="display:none;">Matching your skills…</div>
       <div class="job-list" id="job-list"></div>
     </section>
   </main>
-  <footer><p>Built by Binary Brains <span>♥</span></p><small>Work Wise is an educational recommendation tool. Quiz results are self-reported and are not formal certifications.</small></footer>
+  <footer><p>Work Wise · Student project</p><small>Made to practise skill matching and explore career options. Quiz scores are not professional certifications, and company links may not show current vacancies.</small></footer>
   <div id="quiz-modal" class="modal" style="display:none;" role="dialog" aria-modal="true" aria-labelledby="quiz-heading">
     <div class="modal-content">
-      <div class="modal-top"><div><div class="section-kicker">SKILL CHECK</div><h3 id="quiz-heading">Verify: <span id="quiz-skill-name"></span></h3></div><span class="quiz-icon">✓</span></div>
-      <p class="muted">Choose one answer for each question. You need 3 out of 4 correct to add this skill.</p>
+      <div class="modal-top"><div><div class="section-kicker">QUICK SKILL CHECK</div><h3 id="quiz-heading">Verify: <span id="quiz-skill-name"></span></h3></div><span class="quiz-icon">✓</span></div>
+      <p class="muted">Choose the answer you think is right for each question. Three correct answers are enough to pass this check.</p>
       <div id="quiz-questions"></div>
       <div class="modal-actions"><button type="button" id="quiz-submit" class="primary-btn">Check answers</button><button type="button" id="quiz-cancel" class="secondary-btn">Cancel</button></div>
       <div id="quiz-feedback" class="quiz-feedback" aria-live="polite"></div>
