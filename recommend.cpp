@@ -99,15 +99,31 @@ int main(int argc, char* argv[]) {
     for (int i = 1; i < argc; ++i)
         userSkills.push_back(argv[i]);
     vector<Job> jobs = {
-       {"Frontend Developer", "Amazon", {"HTML", "CSS", "JavaScript", "React"}, "https://www.amazon.jobs/en/"},
-        {"Software Development Engineer", "Flipkart", {"Java", "Spring Boot", "SQL", "API Development"}, "https://www.flipkartcareers.com/"},
-        {"Data Analyst", "Microsoft", {"Python", "Excel", "SQL", "Data Visualization"}, "https://careers.microsoft.com/"},
-        {"UX Designer", "Google", {"Figma", "UI/UX", "Prototyping", "User Research"}, "https://careers.google.com/"},
-        {"Backend Engineer", "Meesho", {"Node.js", "MongoDB", "API Development", "Cloud Services"}, "https://careers.meesho.com/"},
-        {"Cloud Solutions Architect", "AWS", {"Cloud Computing", "AWS", "DevOps", "Infrastructure"}, "https://www.amazon.jobs/en/teams/aws"},
-        {"Content Strategist", "Netflix", {"Content Strategy", "Digital Marketing", "Analytics", "SEO"}, "https://jobs.netflix.com/"},
-        {"Business Analyst", "Deloitte", {"Business Analysis", "Data Analysis", "SQL", "Project Management"}, "https://www2.deloitte.com/global/en/careers.html"}
-     };
+        {"Frontend Developer", "Amazon", {"html", "css", "javascript", "react"}, "https://www.amazon.jobs/"},
+        {"Software Development Engineer", "Flipkart", {"java", "sql", "data structures", "git"}, "https://www.flipkartcareers.com/"},
+        {"Data Analyst", "Microsoft", {"python", "excel", "sql", "machine learning"}, "https://careers.microsoft.com/"},
+        {"UX/UI Designer", "Google", {"figma", "communication", "html", "css"}, "https://careers.google.com/"},
+        {"Backend Developer", "Meesho", {"node.js", "mongodb", "javascript", "git"}, "https://www.meesho.io/jobs"},
+        {"Cloud / AWS Associate", "AWS", {"aws", "python", "git", "communication"}, "https://www.amazon.jobs/content/en/teams/amazon-web-services"},
+        {"Business Intelligence Analyst", "Deloitte", {"excel", "sql", "python", "communication"}, "https://www.deloitte.com/global/en/careers.html"},
+        {"Software Engineer", "Adobe", {"java", "c++", "data structures", "git"}, "https://careers.adobe.com/"},
+        {"Associate Software Engineer", "IBM", {"python", "java", "sql", "communication"}, "https://www.ibm.com/careers"},
+        {"Full Stack Developer", "Wipro", {"html", "css", "javascript", "node.js"}, "https://careers.wipro.com/"},
+        {"Graduate Engineer Trainee", "Infosys", {"java", "python", "sql", "data structures"}, "https://www.infosys.com/careers/"},
+        {"Technology Analyst", "TCS", {"java", "sql", "git", "communication"}, "https://www.tcs.com/careers"},
+        {"Product / Data Analyst", "Swiggy", {"sql", "excel", "python", "communication"}, "https://careers.swiggy.com/"},
+        {"Software Development Engineer", "Zomato", {"javascript", "python", "data structures", "git"}, "https://www.zomato.com/careers"},
+        {"Data / AI Intern", "NVIDIA", {"python", "machine learning", "c++", "data structures"}, "https://www.nvidia.com/en-us/about-nvidia/careers/"},
+        {"Cloud Support Associate", "Oracle", {"aws", "sql", "python", "communication"}, "https://www.oracle.com/careers/"},
+        {"Software Engineer", "Accenture", {"java", "python", "sql", "communication"}, "https://www.accenture.com/in-en/careers"},
+        {"Frontend Engineer", "Atlassian", {"html", "css", "javascript", "react"}, "https://www.atlassian.com/company/careers"},
+        {"Software Engineer", "Paytm", {"java", "sql", "data structures", "git"}, "https://paytm.com/careers/"},
+        {"Product Design Intern", "Canva", {"figma", "communication", "html", "css"}, "https://www.canva.com/careers/"},
+        {"Data Analyst", "Uber", {"python", "sql", "excel", "machine learning"}, "https://www.uber.com/us/en/careers/"},
+        {"Software Engineer", "Cisco", {"python", "c++", "data structures", "communication"}, "https://jobs.cisco.com/"},
+        {"Application Developer", "Capgemini", {"java", "sql", "git", "communication"}, "https://www.capgemini.com/careers/"},
+        {"Software Engineer", "Intuit", {"javascript", "react", "sql", "git"}, "https://careers.intuit.com/"}
+    };
     //Graph creation 
     Graph g;
      for (auto& job : jobs) {

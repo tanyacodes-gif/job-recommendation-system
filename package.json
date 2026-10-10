@@ -1,18 +1,9 @@
 {
   "name": "workwiseproject",
-  "version": "1.0.0",
-  "description": "",
+  "version": "2.0.0",
+  "description": "Skill verification and job recommendation demo",
   "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "body-parser": "^2.2.0",
-    "express": "^5.1.0"
-  }
+  "scripts": { "start": "node server.js" },
+  "dependencies": { "body-parser": "^2.2.0", "express": "^5.1.0" },
+  "type": "commonjs"
 }
