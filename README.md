@@ -2,7 +2,7 @@
 
 Work Wise is a small web project I built to explore how someone's skills could connect to possible job roles. It lets a user pick skills, answer short quizzes, and see career suggestions based on their results.
 
-## Live demo:- https://tanyacodes-gif.github.io/job-recommendation-system/
+## Live demo:- https://job-recommendation-system-coral.vercel.app
 
 ## What it does
 - Includes 17 skills, from HTML, JavaScript and Python to SQL, React, AWS and Communication.
